@@ -5,6 +5,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "omnios"
   config.vm.define "omnios" do |lucid|
   end
-  config.vm.provision "puppet"
+  # Disable puppet for the moment until I can find a vagrant box that has it pre-installed
+  #config.vm.provision "puppet"
   config.vm.box_url = "http://omnios.omniti.com/media/omnios-latest.box"
 end
