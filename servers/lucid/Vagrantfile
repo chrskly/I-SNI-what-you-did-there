@@ -1,0 +1,10 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "lucid64"
+  config.vm.define "lucid" do |lucid|
+  end
+  config.vm.provision "puppet"
+  config.vm.box_url = "http://files.vagrantup.com/lucid64.box"
+end
